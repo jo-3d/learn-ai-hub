@@ -221,4 +221,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; git 
+export default Footer;

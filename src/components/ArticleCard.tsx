@@ -37,7 +37,6 @@ const CardImage = styled.div`
   position: relative;
   width: 100%;
   height: 200px;
-  background-color: ${props => props.$backgroundColor || '#d4e6ff'};
 `;
 
 const CardContent = styled.div`

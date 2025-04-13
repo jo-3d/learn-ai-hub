@@ -20,4 +20,16 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log* 
+yarn-error.log*
+
+# Next.js build output
+.next/
+out/
+
+# Firebase
+.firebase/
+.firebaserc
+apphosting.yaml
+
+# Other
+public/index.html 
