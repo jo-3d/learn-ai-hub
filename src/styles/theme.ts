@@ -1,12 +1,22 @@
 export type Theme = {
   colors: {
     primary: string;
-    secondary: string;
+    primaryLight: string;
+    primaryDark: string;
     accent: string;
-    light: string;
-    dark: string;
-    text: string;
-    shadow: string;
+    bgDark: string;
+    bgDarkAlt: string;
+    bgDarkHover: string;
+    borderDark: string;
+    textPrimary: string;
+    textSecondary: string;
+    textMuted: string;
+    success: string;
+    youtube: string;
+  };
+  gradients: {
+    primary: string;
+    hero: string;
   };
   breakpoints: {
     mobile: string;
@@ -56,6 +66,8 @@ export type Theme = {
     small: string;
     medium: string;
     large: string;
+    glow: string;
+    glowStrong: string;
   };
   transitions: {
     fast: string;
@@ -71,13 +83,23 @@ export type Theme = {
 
 const theme: Theme = {
   colors: {
-    primary: '#2A7DE1',
-    secondary: '#5E42BC',
-    accent: '#00BFA6',
-    light: '#F5F7FA',
-    dark: '#333844',
-    text: '#4A4F5C',
-    shadow: 'rgba(0, 0, 0, 0.1)',
+    primary: '#2196F3',
+    primaryLight: '#64B5F6',
+    primaryDark: '#1976D2',
+    accent: '#4FC3F7',
+    bgDark: '#0D1117',
+    bgDarkAlt: '#161B22',
+    bgDarkHover: '#21262D',
+    borderDark: '#30363D',
+    textPrimary: '#E6EDF3',
+    textSecondary: '#8B949E',
+    textMuted: '#6E7681',
+    success: '#3FB950',
+    youtube: '#FF0000',
+  },
+  gradients: {
+    primary: 'linear-gradient(135deg, #4FC3F7 0%, #2196F3 50%, #1976D2 100%)',
+    hero: 'linear-gradient(135deg, #4FC3F7 0%, #2196F3 50%, #1976D2 100%)',
   },
   breakpoints: {
     mobile: '480px',
@@ -86,7 +108,7 @@ const theme: Theme = {
     wide: '1200px',
   },
   typography: {
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
     h1: {
       fontSize: '3rem',
       lineHeight: 1.2,
@@ -95,10 +117,10 @@ const theme: Theme = {
     h2: {
       fontSize: '2.2rem',
       lineHeight: 1.3,
-      fontWeight: 700,
+      fontWeight: 600,
     },
     h3: {
-      fontSize: '1.8rem',
+      fontSize: '1.5rem',
       lineHeight: 1.4,
       fontWeight: 600,
     },
@@ -117,21 +139,23 @@ const theme: Theme = {
     xxl: '3rem',
   },
   borderRadius: {
-    small: '4px',
-    medium: '8px',
-    large: '12px',
+    small: '6px',
+    medium: '10px',
+    large: '16px',
     round: '50%',
     pill: '50px',
   },
   shadows: {
-    small: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    medium: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    large: '0 8px 16px rgba(0, 0, 0, 0.1)',
+    small: '0 1px 3px rgba(0, 0, 0, 0.3)',
+    medium: '0 4px 12px rgba(0, 0, 0, 0.4)',
+    large: '0 8px 30px rgba(0, 0, 0, 0.5)',
+    glow: '0 0 20px rgba(79, 195, 247, 0.3)',
+    glowStrong: '0 0 30px rgba(79, 195, 247, 0.4)',
   },
   transitions: {
-    fast: '0.2s',
-    medium: '0.3s',
-    slow: '0.5s',
+    fast: '0.15s ease',
+    medium: '0.3s ease',
+    slow: '0.5s ease',
   },
   zIndex: {
     header: 100,
@@ -140,4 +164,4 @@ const theme: Theme = {
   },
 };
 
-export default theme; 
+export default theme;

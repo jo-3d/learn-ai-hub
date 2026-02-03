@@ -1,42 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
+// Image import no longer needed if not used elsewhere
+// import Image from 'next/image'; 
 
 interface ArticleCardProps {
   tag: string;
   title: string;
   excerpt: string;
-  author?: {
-    name: string;
-    avatar: string;
-  };
   date: string;
   slug: string;
-  imageUrl?: string;
-  backgroundColor?: string;
+  backgroundColor?: string; // Added backgroundColor as optional prop
 }
 
-const Card = styled.article`
-  background-color: white;
-  border-radius: 10px;
+// The main container is now the Link itself
+const CardLink = styled(Link)`
+  display: block; // Make the link a block element
+  text-decoration: none;
+  color: inherit; // Inherit text color
+`;
+
+const Card = styled.div`
+  background-color: var(--bg-dark-alt);
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 15px var(--shadow);
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
-  cursor: pointer;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: var(--glow-cyan);
   }
-`;
-
-const CardImage = styled.div`
-  position: relative;
-  width: 100%;
-  height: 200px;
 `;
 
 const CardContent = styled.div`
@@ -48,26 +46,27 @@ const CardContent = styled.div`
 
 const Tag = styled.span`
   display: inline-block;
-  background-color: rgba(94, 66, 188, 0.1);
-  color: var(--secondary);
-  padding: 0.5rem 1rem;
+  align-self: flex-start;
+  background-color: rgba(79, 195, 247, 0.15);
+  color: var(--accent);
+  padding: 0.4rem 0.9rem;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 const Title = styled.h3`
-  font-size: 1.25rem;
-  color: var(--dark);
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
   line-height: 1.4;
 `;
 
 const Excerpt = styled.p`
-  color: var(--text);
+  color: var(--text-secondary);
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 1.5rem;
   flex-grow: 1;
 `;
@@ -77,90 +76,35 @@ const Meta = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-`;
-
-const Date = styled.span`
-  color: var(--text-light);
   font-size: 0.9rem;
+  color: var(--text-muted);
 `;
 
-const Author = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
-const AuthorAvatar = styled.div`
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-`;
-
-const AuthorName = styled.span`
-  color: var(--text-light);
-  font-size: 0.9rem;
-`;
+const DateSpan = styled.span``; // Renamed from Date to avoid conflict
 
 const ArticleCard: React.FC<ArticleCardProps> = ({
   tag,
   title,
   excerpt,
-  author,
   date,
   slug,
-  imageUrl,
-  backgroundColor
+  backgroundColor // Added prop
 }) => {
   return (
-    <Link href={`/ai-insights/${slug}`} passHref legacyBehavior>
+    <CardLink href={`/ai-insights/${slug}`} passHref>
       <Card>
-        <CardImage>
-          {imageUrl ? (
-            <Image
-              src={imageUrl}
-              alt={title}
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          ) : (
-            <div style={{ 
-              width: '100%', 
-              height: '100%', 
-              backgroundColor: backgroundColor || '#d4e6ff',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '2rem'
-            }}>
-              {tag.charAt(0)}
-            </div>
-          )}
-        </CardImage>
+        {/* Image section completely removed */}
         <CardContent>
           <Tag>{tag}</Tag>
           <Title>{title}</Title>
           <Excerpt>{excerpt}</Excerpt>
           <Meta>
-            <Date>{date}</Date>
-            {author && (
-              <Author>
-                <AuthorAvatar>
-                  <Image
-                    src={author.avatar}
-                    alt={author.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                  />
-                </AuthorAvatar>
-                <AuthorName>{author.name}</AuthorName>
-              </Author>
-            )}
+            <DateSpan>{date}</DateSpan>
+            {/* Removed author section for now */}
           </Meta>
         </CardContent>
       </Card>
-    </Link>
+    </CardLink>
   );
 };
 

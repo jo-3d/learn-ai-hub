@@ -89,47 +89,47 @@ const AboutPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "HealthTech AI Hub",
-    "description": "Your trusted resource for navigating the intersection of healthcare technology and artificial intelligence.",
-    "url": "https://healthtechaihub.com",
+    "name": "LearnAIHub",
+    "description": "Your trusted resource for navigating and mastering AI tools and technologies.",
+    "url": "https://learnaihub.com",
     "sameAs": [
-      "https://linkedin.com/company/healthtechaihub",
-      "https://twitter.com/healthtechaihub"
+      "https://linkedin.com/company/learnaihub",
+      "https://twitter.com/learnaihub"
     ]
   };
 
   return (
     <MainLayout>
       <Head>
-        <title>About Us | HealthTech AI Hub - Healthcare AI Innovation</title>
+        <title>About Us | LearnAIHub - Your Gateway to AI Mastery</title>
         <meta 
           name="description" 
-          content="HealthTech AI Hub empowers healthcare professionals with insights, resources, and opportunities at the intersection of healthcare and artificial intelligence." 
+          content="LearnAIHub empowers individuals and professionals with insights, resources, and tutorials to excel in the world of artificial intelligence." 
         />
         <meta 
           name="keywords" 
-          content="healthcare AI, medical technology, healthcare innovation, AI in healthcare, medical AI, healthcare technology" 
+          content="AI learning, AI tutorials, technology education, AI tools, generative AI, prompt engineering" 
         />
         
         {/* Open Graph tags */}
-        <meta property="og:title" content="About HealthTech AI Hub" />
+        <meta property="og:title" content="About LearnAIHub" />
         <meta 
           property="og:description" 
-          content="Your trusted resource for navigating the intersection of healthcare technology and artificial intelligence." 
+          content="Your trusted resource for navigating and mastering AI tools and technologies." 
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://healthtechaihub.com/about" />
+        <meta property="og:url" content="https://learnaihub.com/about" />
         
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About HealthTech AI Hub" />
+        <meta name="twitter:title" content="About LearnAIHub" />
         <meta 
           name="twitter:description" 
-          content="Empowering healthcare professionals with AI innovation insights and resources." 
+          content="Empowering everyone with AI knowledge, tutorials, and resources." 
         />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://healthtechaihub.com/about" />
+        <link rel="canonical" href="https://learnaihub.com/about" />
 
         {/* Structured Data */}
         <script 
@@ -142,7 +142,7 @@ const AboutPage = () => {
         <HeroContent>
           <Title>About Us</Title>
           <Subtitle>
-            Welcome to HealthTech AI Hub—your trusted resource and strategic partner at the intersection of healthcare technology and artificial intelligence.
+            Welcome to LearnAIHub—your go-to destination for mastering AI tools and technologies through practical tutorials, resources, and guidance.
           </Subtitle>
         </HeroContent>
       </HeroSection>
@@ -151,21 +151,21 @@ const AboutPage = () => {
         <ContentSection>
           <SectionTitle>Our Mission</SectionTitle>
           <Paragraph>
-            Our mission is to bridge the gap between AI innovation and clinical practice, equipping professionals and organizations to navigate the evolving world of healthcare AI ethically and effectively.
+            Our mission is to demystify artificial intelligence and make it accessible to everyone. We provide clear, practical guidance to help you harness the power of AI tools to enhance your productivity, creativity, and professional capabilities.
           </Paragraph>
         </ContentSection>
 
         <ContentSection>
           <SectionTitle>Who We Are</SectionTitle>
           <Paragraph>
-            Founded by a healthcare technology leader with over 20 years of implementation experience and supported by cross-disciplinary experts, HealthTech AI Hub combines deep industry knowledge with a passion for responsible AI innovation. We focus on demystifying healthcare AI, turning complexity into clarity and ambition into action.
+            Founded by a team of AI enthusiasts and educators, LearnAIHub brings together expertise in various AI technologies with a passion for teaching and simplifying complex concepts. We're committed to helping both beginners and advanced users navigate the rapidly evolving AI landscape.
           </Paragraph>
         </ContentSection>
 
         <ContentSection>
           <SectionTitle>What We Offer</SectionTitle>
           <Paragraph>
-            We provide curated articles, practical guides, career development tools, and strategic analysis focused on the real-world application of AI in healthcare. Our platform fosters a community for learning, connection, and navigating the evolving landscape of medical technology. Additionally, we offer specialized consulting services to help organizations implement AI strategies effectively.
+            We provide step-by-step tutorials, practical guides, curated resources, and tips for mastering tools like ChatGPT, Midjourney, and other AI platforms. Our content focuses on real-world applications that you can implement immediately. We also foster a community where learners can share experiences and learn from each other.
           </Paragraph>
           <Link href="/consulting-services" passHref legacyBehavior>
              <LinkButton>View Our Services</LinkButton>
@@ -175,7 +175,7 @@ const AboutPage = () => {
         <CallToActionSection>
           <SectionTitle>Get In Touch</SectionTitle>
           <Paragraph>
-            Connect with us if you're exploring AI in healthcare, seeking strategic guidance, or interested in collaboration.
+            Have questions about AI tools? Looking for specific tutorials? Want to suggest content or collaborate with us? We'd love to hear from you!
           </Paragraph>
           <Paragraph>
             Fill out the form below or reach out through our social channels.

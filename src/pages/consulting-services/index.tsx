@@ -116,63 +116,63 @@ const ContactSection = styled(ContentSection)`
 const ConsultingServicesPage: React.FC = () => {
   const services = [
     {
-      icon: "🧭",
-      title: "AI Strategy & Implementation Planning",
-      description: "Develop clear roadmaps for AI adoption, aligning technology with business goals and clinical needs. We help define use cases, assess readiness, and plan phased rollouts."
+      icon: "👤",
+      title: "1-on-1 AI Guidance",
+      description: "Get personalized help with AI tools, prompt engineering, and workflow optimization. Perfect for professionals looking to enhance their AI skills."
     },
     {
-      icon: "🛡️",
-      title: "Ethical AI Adoption & Governance",
-      description: "Establish robust frameworks for responsible AI use. We assist with policy development, bias mitigation strategies, transparency protocols, and ensuring ethical alignment."
+      icon: "💼",
+      title: "Small Business AI Solutions",
+      description: "Custom AI implementation strategies for small businesses. We help you automate tasks, enhance customer service, and optimize operations."
+    },
+    {
+      icon: "🎯",
+      title: "Project-Based Consulting",
+      description: "Need help with a specific AI project? We provide focused consulting to help you plan, implement, and optimize AI solutions for your goals."
     },
     {
       icon: "🔄",
-      title: "Clinical Workflow Integration",
-      description: "Seamlessly integrate AI tools into existing clinical workflows. We analyze current processes, design optimized workflows, and ensure smooth adoption with minimal disruption."
+      title: "Workflow Automation",
+      description: "Transform your workflows with AI. We help you identify opportunities for automation and implement the right tools to save time and reduce costs."
     },
     {
-      icon: "📜",
-      title: "Regulatory & Compliance Readiness",
-      description: "Navigate the complex regulatory landscape (HIPAA, FDA SaMD guidance). We help ensure your AI initiatives meet compliance standards and prepare for audits."
-    },
-    {
-      icon: "💾",
-      title: "Healthcare Data Governance Programs",
-      description: "Build solid foundations for AI with effective data governance. We help establish policies for data quality, privacy, security, access control, and lifecycle management."
+      icon: "📊",
+      title: "AI Tool Selection & Setup",
+      description: "Get expert help choosing and configuring the right AI tools for your needs, from ChatGPT and Claude to specialized AI solutions."
     }
   ];
 
   return (
     <MainLayout>
       <Head>
-        <title>AI Consulting Services | HealthTech AI Hub</title>
+        <title>AI Consulting & Support Services | Learn AI Hub</title>
         <meta 
           name="description" 
-          content="Strategic AI consulting for healthcare organizations. Explore services in AI strategy, implementation, ethics, governance, workflow integration, and compliance."
+          content="Get personalized AI consulting and support. From one-on-one guidance to small business implementation, we help you succeed with AI tools and automation."
         />
         <meta 
           name="keywords" 
-          content="healthcare AI consulting, AI implementation services, healthcare AI strategy, ethical AI consulting, medical AI governance, clinical workflow AI, healthcare compliance AI, data governance healthcare" 
+          content="AI consulting, personal AI help, small business AI, AI implementation, AI automation, AI tools consulting, ChatGPT consulting, AI workflow optimization" 
         />
-        <link rel="canonical" href="https://healthtechaihub.com/consulting-services" />
-        {/* Add OG/Twitter tags if desired */}
+        <link rel="canonical" href="https://learnaihub.com/consulting-services" />
       </Head>
 
       <HeroSection>
         <HeroContent>
-          <PageTitle>Healthcare AI Consulting Services</PageTitle>
+          <PageTitle>AI Consulting & Support Services</PageTitle>
           <PageSubtitle>
-            Navigate the complexities of artificial intelligence in healthcare with expert guidance. We partner with you to develop strategies, implement solutions, and ensure responsible innovation.
+            Get expert guidance to implement AI in your work and business. Whether you need one-on-one help or 
+            small business consulting, we're here to help you leverage AI tools effectively.
           </PageSubtitle>
         </HeroContent>
       </HeroSection>
 
       <Container>
-        {/* Services Overview */}
         <ContentSection>
-          <SectionTitle>Our Expertise</SectionTitle>
+          <SectionTitle>Our Services</SectionTitle>
           <SectionIntro>
-            We offer specialized consulting services designed to help healthcare providers, digital health companies, and AI vendors successfully leverage artificial intelligence. Our approach combines deep industry knowledge with practical implementation experience.
+            We offer personalized consulting services to help individuals and businesses successfully implement AI tools 
+            and automation. Our approach combines practical experience with hands-on guidance to ensure your success.
           </SectionIntro>
           <ServicesGrid>
             {services.map((service, index) => (
@@ -185,26 +185,25 @@ const ConsultingServicesPage: React.FC = () => {
           </ServicesGrid>
         </ContentSection>
 
-        {/* Who We Help / Approach (Optional - Simple Text Section) */}
         <ContentSection>
-          <SectionTitle>Who We Partner With</SectionTitle>
+          <SectionTitle>Who We Help</SectionTitle>
           <SectionIntro>
-            Our clients include hospitals and health systems seeking to implement AI, digital health startups developing innovative AI products, and established AI vendors looking to refine their healthcare offerings and strategy.
+            Our services are designed for individuals, professionals, and small businesses looking to leverage AI effectively. 
+            Whether you're just starting with AI or looking to optimize your existing AI workflows, we provide the guidance you need.
           </SectionIntro>
-           {/* Add more about approach if desired */}
         </ContentSection>
 
-        {/* Contact CTA Section - Now using shared ContactForm */}
         <ContactSection>
-          <SectionTitle>Ready to Accelerate Your AI Journey?</SectionTitle>
+          <SectionTitle>Ready to Get Started?</SectionTitle>
           <SectionIntro>
-            Let's discuss how our strategic consulting services can help you achieve your goals. Fill out the form below to schedule an initial consultation.
+            Book a free consultation to discuss your AI needs. We'll help you identify the best approach for your goals and create 
+            a plan for success.
           </SectionIntro>
           
           <ContactForm 
             source="Consulting Services Page"
-            successMessage="Thank you for your interest! We will be in touch soon to discuss your needs."
-            buttonText="Request Consultation"
+            successMessage="Thanks for reaching out! We'll contact you soon to discuss how we can help with your AI journey."
+            buttonText="Book Free Consultation"
           />
         </ContactSection>
 

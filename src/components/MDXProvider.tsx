@@ -1,17 +1,22 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import AIUseCasesTable from './AIUseCasesTable';
-import AIReadinessTable from './AIReadinessTable';
-import DataSecurityTable from './DataSecurityTable';
-import EthicalConsiderationsTable from './EthicalConsiderationsTable';
-import FDARegulatoryTable from './FDARegulatoryTable';
-import KPIsTable from './KPIsTable';
-import DataQualityMetricsTable from './DataQualityMetricsTable';
-import DataLifecycleTable from './DataLifecycleTable';
-import RegulatoryComplianceTable from './RegulatoryComplianceTable';
-import DataGovernanceRolesTable from './DataGovernanceRolesTable';
-import BiasMitigationTable from './BiasMitigationTable';
+import {
+  AIUseCasesTable,
+  AIReadinessTable,
+  DataSecurityTable,
+  EthicalConsiderationsTable,
+  FDARegulatoryTable,
+  KPIsTable,
+  DataQualityMetricsTable,
+  DataLifecycleTable,
+  RegulatoryComplianceTable,
+  DataGovernanceRolesTable,
+  BiasMitigationTable,
+  ChallengesTable,
+  JobTitlesTable
+} from './AIComponentDummies';
 
+// Update components object with imported dummy components
 const components = {
   AIUseCasesTable,
   AIReadinessTable,
@@ -24,6 +29,8 @@ const components = {
   RegulatoryComplianceTable,
   DataGovernanceRolesTable,
   BiasMitigationTable,
+  ChallengesTable,
+  JobTitlesTable
 };
 
 export function CustomMDXProvider({ children }: { children: React.ReactNode }) {

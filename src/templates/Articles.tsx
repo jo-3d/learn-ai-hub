@@ -6,27 +6,22 @@ import Sidebar from '../components/Sidebar';
 
 interface Author {
   name: string;
-  bio: string;
+  bio?: string;
 }
 
 interface ArticlesProps {
   title: string;
   date: string;
-  author: Author;
-  description: string;
+  author?: Author;
+  description?: string;
   content: any;
   coverImage?: string;
   tags: string[];
-  readingTime: string;
+  readingTime?: string;
   relatedArticles?: {
     title: string;
     slug: string;
     tag: string;
-  }[];
-  relatedCaseStudies?: {
-    title: string;
-    slug: string;
-    industry: string;
   }[];
 }
 
@@ -189,7 +184,6 @@ const Articles: React.FC<ArticlesProps> = ({
   tags,
   readingTime,
   relatedArticles,
-  relatedCaseStudies
 }) => {
   return (
     <ArticleLayout>
@@ -197,13 +191,21 @@ const Articles: React.FC<ArticlesProps> = ({
         <Header>
           <Title>{title}</Title>
           <Meta>
-            <AuthorInfo>
-              <span>{author.name}</span>
-            </AuthorInfo>
-            <span>•</span>
+            {author?.name && (
+              <>
+                <AuthorInfo>
+                  <span>{author.name}</span>
+                </AuthorInfo>
+                <span>•</span>
+              </>
+            )}
             <time>{date}</time>
-            <span>•</span>
-            <span>{readingTime}</span>
+            {readingTime && (
+              <>
+                <span>•</span>
+                <span>{readingTime}</span>
+              </>
+            )}
           </Meta>
           <TagList>
             {tags.map((tag) => (
@@ -228,8 +230,7 @@ const Articles: React.FC<ArticlesProps> = ({
       </MainContent>
       <Sidebar 
         relatedArticles={relatedArticles}
-        relatedCaseStudies={relatedCaseStudies}
-        currentTag={tags[0]}
+        currentTag={tags?.[0]}
       />
     </ArticleLayout>
   );

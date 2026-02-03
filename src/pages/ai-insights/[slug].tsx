@@ -1,9 +1,11 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { serialize } from 'next-mdx-remote/serialize';
+import fsSync from 'fs';
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import styled from 'styled-components';
 import MainLayout from '../../layouts/MainLayout';
 import Articles from '../../templates/Articles';
 
@@ -26,16 +28,26 @@ interface ArticlePageProps {
     slug: string;
     tag: string;
   }[];
-  relatedCaseStudies: {
-    title: string;
-    slug: string;
-    industry: string;
-  }[];
 }
 
-const ArticlePage: React.FC<ArticlePageProps> = ({ frontMatter, mdxSource, relatedArticles, relatedCaseStudies }) => {
+const ReviewBadge = styled.div`
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: #ff6b35;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+`;
+
+const ArticlePage: React.FC<ArticlePageProps> = ({ frontMatter, mdxSource, relatedArticles }) => {
   return (
     <MainLayout>
+      {(frontMatter as any).status === 'review' && <ReviewBadge>REVIEW</ReviewBadge>}
       <Articles
         title={frontMatter.title}
         date={frontMatter.date}
@@ -46,21 +58,30 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ frontMatter, mdxSource, relat
         tags={frontMatter.tags}
         readingTime={frontMatter.readingTime}
         relatedArticles={relatedArticles}
-        relatedCaseStudies={relatedCaseStudies}
       />
     </MainLayout>
   );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const articlesDirectory = path.join(process.cwd(), 'src/content/articles');
+  const articlesDirectory = path.join(process.cwd(), 'content/articles');
   const filenames = await fs.readdir(articlesDirectory);
 
-  const paths = filenames.map((filename) => ({
-    params: {
-      slug: filename.replace(/\.mdx$/, ''),
-    },
-  }));
+  const isDev = process.env.NODE_ENV !== 'production';
+
+  const paths = filenames
+    .filter(filename => {
+      if (isDev) return true;
+      const filePath = path.join(articlesDirectory, filename);
+      const fileContents = fsSync.readFileSync(filePath, 'utf8');
+      const { data } = matter(fileContents);
+      return !data.status || data.status === 'published';
+    })
+    .map((filename) => ({
+      params: {
+        slug: filename.replace(/\.mdx$/, ''),
+      },
+    }));
 
   return {
     paths,
@@ -69,7 +90,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const articlesDirectory = path.join(process.cwd(), 'src/content/articles');
+  const articlesDirectory = path.join(process.cwd(), 'content/articles');
   const filePath = path.join(articlesDirectory, `${params?.slug}.mdx`);
   const fileContents = await fs.readFile(filePath, 'utf8');
 
@@ -104,35 +125,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     .filter(article => article !== null)
     .slice(0, 2);
 
-  // Get related case studies
-  const caseStudiesDirectory = path.join(process.cwd(), 'src/content/case-studies');
-  const caseStudyFiles = await fs.readdir(caseStudiesDirectory);
-  
-  const relatedCaseStudies = await Promise.all(
-    caseStudyFiles.map(async (file) => {
-      const content = await fs.readFile(path.join(caseStudiesDirectory, file), 'utf8');
-      const { data } = matter(content);
-      
-      // Check if there are matching tags/industry
-      const hasMatchingTag = data.industry === 'Healthcare' || 
-        (frontMatter.tags && frontMatter.tags.includes(data.industry));
-      
-      if (hasMatchingTag) {
-        return {
-          title: data.title,
-          slug: file.replace(/\.mdx$/, ''),
-          industry: data.industry
-        };
-      }
-      return null;
-    })
-  );
-
-  // Filter out null values and limit to 2 related case studies
-  const filteredRelatedCaseStudies = relatedCaseStudies
-    .filter(caseStudy => caseStudy !== null)
-    .slice(0, 2);
-
   const mdxSource = await serialize(content);
 
   return {
@@ -140,7 +132,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       frontMatter,
       mdxSource,
       relatedArticles: filteredRelatedArticles,
-      relatedCaseStudies: filteredRelatedCaseStudies
     }
   };
 };

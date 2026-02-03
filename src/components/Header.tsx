@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import Image from 'next/image';
-import SubscriptionModal from './SubscriptionModal';
 
 const HeaderContainer = styled.header`
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid var(--border-dark);
   padding: 0.75rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(10px);
 `;
 
 const Container = styled.div`
@@ -27,11 +26,14 @@ const Logo = styled.div`
   align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-primary);
   cursor: pointer;
-  
-  span {
-    color: var(--secondary);
+
+  span.gradient-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 `;
 
@@ -39,24 +41,24 @@ const LogoImage = styled.div`
   position: relative;
   width: 42px;
   height: 42px;
-  margin-right: 8px;
+  margin-right: 10px;
 `;
 
-const Nav = styled.nav<{ isOpen: boolean }>`
+const Nav = styled.nav<{ $isOpen: boolean }>`
   @media (max-width: 768px) {
-    display: ${props => props.isOpen ? 'flex' : 'none'};
+    display: ${props => props.$isOpen ? 'flex' : 'none'};
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--bg-dark-alt);
+    border-bottom: 1px solid var(--border-dark);
     padding: 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    
+
     ul {
       flex-direction: column;
       width: 100%;
-      
+
       li {
         margin: 0.5rem 0;
         text-align: center;
@@ -67,40 +69,63 @@ const Nav = styled.nav<{ isOpen: boolean }>`
 
 const NavList = styled.ul`
   display: flex;
+  align-items: center;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+`;
+
+const NavItem = styled.li`
+  a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+`;
+
+const YouTubeLink = styled.a`
+  display: inline-flex;
   align-items: center;
-  height: 100%;
-  
-  li {
-    margin-left: 2rem;
-  }
-`;
-
-const NavLink = styled.a`
+  gap: 0.4rem;
+  color: var(--text-secondary);
   text-decoration: none;
-  color: var(--dark);
   font-weight: 500;
-  transition: color 0.3s;
-  
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+
   &:hover {
-    color: var(--primary);
+    color: var(--youtube);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
   }
 `;
 
-const CTAButton = styled.a`
-  background-color: var(--primary);
+const CTAButton = styled.button`
+  background: var(--gradient);
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 50px;
   font-weight: 600;
+  font-size: 0.9rem;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
   display: inline-block;
-  
+  border: none;
+  cursor: pointer;
+
   &:hover {
-    background-color: var(--secondary);
+    box-shadow: var(--glow-cyan);
+    transform: translateY(-1px);
   }
 `;
 
@@ -110,7 +135,8 @@ const MobileMenuButton = styled.button`
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  
+  color: var(--text-primary);
+
   @media (max-width: 768px) {
     display: block;
   }
@@ -118,69 +144,57 @@ const MobileMenuButton = styled.button`
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <HeaderContainer>
       <Container>
-        <Link href="/" passHref>
+        <Link href="/" passHref legacyBehavior>
           <Logo>
             <LogoImage>
-              <Image
-                src="/images/articles/logo-ai-healthtech-hub.png"
-                alt="HealthTech AI Hub Logo"
-                fill
-                style={{ objectFit: 'contain' }}
+              <img
+                src="/images/LearnAiHub_LOGO.png"
+                alt="LearnAIHub Logo"
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
               />
             </LogoImage>
-            Health<span>Tech AI</span>Hub
+            Learn<span className="gradient-text">AI</span>Hub
           </Logo>
         </Link>
         <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          ☰
+          {isMenuOpen ? '✕' : '☰'}
         </MobileMenuButton>
-        <Nav isOpen={isMenuOpen}>
+        <Nav $isOpen={isMenuOpen}>
           <NavList>
-            <li>
-              <Link href="/" passHref>
-                <NavLink as="span">Home</NavLink>
+            <NavItem>
+              <Link href="/">Home</Link>
+            </NavItem>
+            <NavItem>
+              <YouTubeLink href="https://youtube.com/@learninghubai" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                Videos
+              </YouTubeLink>
+            </NavItem>
+            <NavItem>
+              <Link href="/ai-insights">Blog</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/ai-tools">Tools</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/about">About</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/subscribe" passHref legacyBehavior>
+                <CTAButton as="a">Subscribe</CTAButton>
               </Link>
-            </li>
-            <li>
-              <Link href="/ai-insights" passHref>
-                <NavLink as="span">AI Insights</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="/toolkits-and-guides" passHref>
-                <NavLink as="span">Toolkits & Guides</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="/career-paths" passHref>
-                <NavLink as="span">Career Paths</NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" passHref>
-                <NavLink as="span">About the Hub</NavLink>
-              </Link>
-            </li>
-            <li>
-              <CTAButton as="button" onClick={() => setIsModalOpen(true)}>
-                Subscribe
-              </CTAButton>
-            </li>
+            </NavItem>
           </NavList>
         </Nav>
       </Container>
-
-      <SubscriptionModal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </HeaderContainer>
   );
 };
 
-export default Header; 
+export default Header;

@@ -1,0 +1,53 @@
+name: Generate AI News Articles
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Every Monday at 9 AM UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: ./src
+        run: npm ci
+
+      - name: Fetch AI News
+        working-directory: ./src
+        run: npm run fetch-news
+
+      - name: Generate Articles
+        working-directory: ./src
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run generate-articles
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: auto-generate AI news articles'
+          branch: ai-news/${{ github.run_number }}
+          title: 'AI News Articles - Review Needed'
+          body: |
+            ## Auto-generated AI News Articles
+
+            This PR contains AI-generated articles from this week's AI news.
+
+            **Review Checklist:**
+            - [ ] Read through each article for accuracy
+            - [ ] Check that explanations are beginner-friendly
+            - [ ] Verify links and sources
+            - [ ] Change `status: "review"` to `status: "published"` for approved articles
+            - [ ] Delete any low-quality articles
+
+          labels: ai-generated, needs-review
