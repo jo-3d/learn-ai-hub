@@ -2,7 +2,7 @@ name: Generate AI News Articles
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # Every Monday at 9 AM UTC
+    - cron: '0 22 * * *' # Daily at 5 PM ET (10 PM UTC)
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
           body: |
             ## Auto-generated AI News Articles
 
-            This PR contains AI-generated articles from this week's AI news.
+            This PR contains AI-generated articles from today's AI news.
 
             **Review Checklist:**
             - [ ] Read through each article for accuracy
