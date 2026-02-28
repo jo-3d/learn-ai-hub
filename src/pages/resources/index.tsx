@@ -205,6 +205,16 @@ const ResourcesPage: React.FC = () => {
               </Section>
 
               <Section>
+                <SectionTitle>Video Resources</SectionTitle>
+                <SectionDescription>Instructions and companion materials from our YouTube videos.</SectionDescription>
+                <List>
+                  <ListItem>
+                    <a href="/resources/copilot-meeting-notes-agent">AI Agent to Write Meeting Notes &mdash; No Copilot License Needed</a>
+                  </ListItem>
+                </List>
+              </Section>
+
+              <Section>
                 <SectionTitle>Learning Resources</SectionTitle>
                 <SectionDescription>Curated resources to expand your knowledge and skills in AI.</SectionDescription>
                 <List>
