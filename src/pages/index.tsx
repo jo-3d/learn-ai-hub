@@ -402,11 +402,11 @@ const HomePage: React.FC<HomePageProps> = ({ latestArticles }) => {
   // Placeholder video data - update with real video IDs
   const featuredVideos = [
     {
-      videoId: 'dQw4w9WgXcQ', // Replace with your actual video ID
-      title: 'Getting Started with AI Tools',
-      description: 'A beginner-friendly introduction to the most useful AI tools',
-      category: 'Tutorial',
-      duration: '12:34'
+      videoId: 'LaI9SWR1Ynw',
+      title: 'I Built an AI Agent to Write My Meeting Notes: No Copilot License Needed',
+      description: 'Learn how to build an AI-powered meeting notes agent without paying for a Copilot license',
+      category: 'AI Agents',
+      duration: ''
     },
     {
       videoId: 'dQw4w9WgXcQ', // Replace with your actual video ID
