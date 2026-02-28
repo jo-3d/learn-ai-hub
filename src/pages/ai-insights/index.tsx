@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import MainLayout from '../../layouts/MainLayout';
 import ArticleCard from '../../components/ArticleCard';
-import Image from 'next/image';
 import Link from 'next/link';
 import fs from 'fs'; // Import Node.js fs module
 import path from 'path'; // Import Node.js path module
@@ -107,93 +106,6 @@ const DropdownItem = styled.button`
   }
 `;
 
-const FeaturedSection = styled.div`
-  margin-bottom: 4rem;
-  background: #f0eaff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-`;
-
-const FeaturedContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  align-items: stretch;
-  min-height: 480px;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-`;
-
-const FeaturedImage = styled.div`
-  position: relative;
-  height: 480px;
-  width: 100%;
-  
-  @media (max-width: 768px) {
-    height: 320px;
-  }
-`;
-
-const FeaturedText = styled.div`
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  h2 {
-    font-size: 1.8rem;
-    color: #121212;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-  }
-  
-  p {
-    color: #4A4F5C;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-`;
-
-const FeaturedBadge = styled.span`
-  display: inline-block;
-  background: #5E42BC;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-  align-self: flex-start;
-`;
-
-const ReadMoreButton = styled(Link)`
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #5E42BC;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s;
-  width: fit-content;
-
-  &:hover {
-    background-color: #2A7DE1;
-  }
-
-  svg {
-    width: 18px;
-    height: 18px;
-  }
-`;
-
 // --- Define Prop Types ---
 interface Article {
   slug: string;
@@ -227,9 +139,6 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({ articles }) => { // Accept 
     ? articles 
     : articles.filter(article => article.tags.includes(activeTag));
 
-  // Find a specific article to feature, e.g., one tagged 'Beginner' or a specific slug
-  const featuredArticle = articles.find(a => a.slug === 'introduction-to-ai-tools') || articles[0]; // Fallback to first article
-
   // Close dropdown when clicking outside
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -250,29 +159,6 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({ articles }) => { // Accept 
           Stay updated with the latest articles, news, and perspectives on the evolving world of AI tools and technology.
         </PageDescription>
 
-        {featuredArticle && (
-          <FeaturedSection>
-            <FeaturedContent>
-              <FeaturedImage>
-                <div style={{ width: '100%', height: '100%', background: '#d4e6ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: '3rem', color: '#2A7DE1' }}>💡</span>
-                </div>
-              </FeaturedImage>
-              <FeaturedText>
-                <FeaturedBadge>{featuredArticle.tag || 'Featured'}</FeaturedBadge>
-                <h2>{featuredArticle.title}</h2>
-                <p>{featuredArticle.excerpt}</p>
-                <ReadMoreButton href={`/ai-insights/${featuredArticle.slug}`}>
-                  Read Article
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </ReadMoreButton>
-              </FeaturedText>
-            </FeaturedContent>
-          </FeaturedSection>
-        )}
-        
         <FilterSection>
           {displayTags.map((tag) => (
             <FilterTag 

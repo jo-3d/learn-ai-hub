@@ -180,7 +180,7 @@ const Header: React.FC = () => {
               <Link href="/ai-insights">Blog</Link>
             </NavItem>
             <NavItem>
-              <Link href="/ai-tools">Tools</Link>
+              <Link href="/resources">Resources</Link>
             </NavItem>
             <NavItem>
               <Link href="/about">About</Link>
