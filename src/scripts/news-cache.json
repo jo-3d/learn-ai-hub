@@ -1,37 +1,37 @@
 [
   {
-    "title": "Elon Musk merges SpaceX with xAI (and X)",
-    "description": "Elon Musk is merging two of the companies that he leads, SpaceX and xAI (which also owns X), into one. According to an announcement from Musk:\nSpaceX has acquired xAI to form the most ambitious, vertically-integrated innovation engine on (and off) Earth, with AI, rockets, space-based internet, direct-to-mobile device communications and the world's foremost real-time information and free speech platform. This marks not just the next chapter, but the next book in SpaceX and xAI's mission: scaling ",
-    "url": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
-    "publishedDate": "2026-02-02T21:53:11.000Z",
+    "title": "Netflix is buying Ben Affleck’s AI startup",
+    "description": "Though Netflix lost the war for Warner Bros., it has just bought an AI startup from the internet's favorite Dunkin' Donuts aficionado.\nToday, Netflix announced that it has acquired InterPositive, Ben Affleck's AI company that specializes in tools for film and television production. The deal will see all 16 of InterPositive's current team of engineers and researchers move over to Netflix. Affleck is also set to join the streamer as a senior adviser.\nIn a statement about the acquisition and his re",
+    "url": "https://www.theverge.com/streaming/889973/netflix-ben-affleck-interpositive-ai",
+    "publishedDate": "2026-03-05T18:27:16.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Firefox is adding a switch to turn AI features off",
-    "description": "Unlike many of the companies stuffing AI into their browsers, Mozilla will soon give you a way to turn all of these features off. An update coming on February 24th will add a new \"AI control\" option to Firefox's settings menu, allowing you to disable or enable the browser's individual AI features, including access to a built-in AI chatbot, translations, AI tab group suggestions, and more.\nOver the past year, Firefox joined Microsoft Edge and Google Chrome in doubling down on AI, with the company",
-    "url": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
-    "publishedDate": "2026-02-02T20:02:39.000Z",
+    "title": "OpenAI’s new GPT-5.4 model is a big step toward autonomous agents",
+    "description": "OpenAI is launching GPT-5.4, the latest version of its AI model that the company says combines advancements in reasoning, coding, and professional work involving spreadsheets, documents, and presentations. It's also OpenAI's first model with native computer use capabilities, meaning it can operate a computer on your behalf and complete tasks across different applications.\nThe new model is a step toward the agentic future that AI companies are aiming to build, where a network of AI-powered agents",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents",
+    "publishedDate": "2026-03-05T18:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "OpenClaw: all the news about the trending AI agent",
-    "description": "An open-source AI agent called OpenClaw (formerly known as both Clawdbot and Moltbot) that runs on your own computer and “actually does things” is taking off inside tech circles. Users interact with OpenClaw via messaging apps like WhatsApp, Telegram, Signal, Discord, and iMessage, giving it the keys to operate independently, managing reminders, writing emails, or buying tickets. \nBut once users give it access to their entire computer and accounts, a configuration error or security flaw could be",
-    "url": "https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news",
-    "publishedDate": "2026-02-02T15:47:39.000Z",
+    "title": "Meta’s AI glasses reportedly send sensitive footage to human reviewers in Kenya",
+    "description": "Meta's AI-powered smart glasses could be sending sensitive footage to human reviewers in Nairobi, Kenya, according to an investigation by the Swedish outlets Svenska Dagbladet and Göteborgs-Posten. The report, which was published last week, claims Meta contractors in Kenya have seen videos captured with the smart glasses that show \"bathroom visits, sex and other intimate moments.\"\nSo far, at least one proposed class action lawsuit accusing Meta of violating false advertising and privacy laws has",
+    "url": "https://www.theverge.com/tech/889637/meta-ai-smart-glasses-human-reviewers-kenya",
+    "publishedDate": "2026-03-05T16:37:52.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Docusign’s CEO on the dangers of trusting AI to read, and write, your contracts",
-    "description": "Today, I’m talking with Allan Thygesen, who is the CEO of Docusign. You know Docusign; it’s the platform where you sign things online. It turns out 7,000 people work there, which is one of those facts you see flying around sometimes that’s always felt like perfect Decoder bait. What are all those people doing? And what kind of product roadmap does a company like Docusign even need?\nI always assumed I would never find out, because most enterprise software CEOs do not like being on Decoder. That’s",
-    "url": "https://www.theverge.com/podcast/871205/docusign-ceo-allan-thygesen-ai-contracts-e-signature-interview",
-    "publishedDate": "2026-02-02T15:00:00.000Z",
+    "title": "Apple Music adds optional labels for AI songs and visuals",
+    "description": "No AI usage will be assumed on works that providers haven't voluntarily tagged. | Illustration: Alex Castro / The Verge\t\n\nApple is asking artists and record labels on its music streaming platform to voluntarily label songs that were made using AI. The new \"Transparency Tags\" metadata system for Apple Music was announced in a newsletter to industry partners yesterday, according to Music Business Worldwide, and covers four categories, including track, composition, artwork, and music videos.\nThe tr",
+    "url": "https://www.theverge.com/tech/889836/apple-music-ai-transparency-tags-launch",
+    "publishedDate": "2026-03-05T14:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Elon Musk’s Grok is still undressing men",
-    "description": "After weeks of flooding the internet with nonconsensual sexual deepfakes, X has finally reined in Elon Musk's rogue chatbot Grok. Musk claims Grok obeys local laws and refuses to produce anything illegal - except it hasn't and it can. My testing shows Grok still readily undresses men and is still churning out intimate images on demand.\nAfter sparking uproar worldwide, X enacted a variety of restrictions to combat the torrent of intimate deepfakes. Evaluating Grok last week suggests little has ch",
-    "url": "https://www.theverge.com/report/872062/grok-still-undressing-men",
-    "publishedDate": "2026-02-02T14:09:47.000Z",
+    "title": "AI tools can unmask anonymous accounts ",
+    "description": "Do you have a Reddit alt, secret X, finsta, or Glassdoor account you trash your boss with? AI might have just made it a lot easier to unmask you. That's the conclusion of a recently published study, which hints at some uncomfortable consequences for staying private online - even if it's not quite time to hold a funeral for anonymity just yet. \nThe finding, which has not been peer reviewed, comes from researchers at ETH Zurich, Anthropic, and the Machine Learning Alignment and Theory Scholars pro",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts",
+    "publishedDate": "2026-03-05T13:30:00.000Z",
     "source": "AI | The Verge"
   }
 ]
