@@ -1,37 +1,37 @@
 [
   {
-    "title": "Elon Musk merges SpaceX with xAI (and X)",
-    "description": "Elon Musk is merging two of the companies that he leads, SpaceX and xAI (which also owns X), into one. According to an announcement from Musk:\nSpaceX has acquired xAI to form the most ambitious, vertically-integrated innovation engine on (and off) Earth, with AI, rockets, space-based internet, direct-to-mobile device communications and the world's foremost real-time information and free speech platform. This marks not just the next chapter, but the next book in SpaceX and xAI's mission: scaling ",
-    "url": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
-    "publishedDate": "2026-02-02T21:53:11.000Z",
+    "title": "Google is making it easier to import another AI’s memory into Gemini",
+    "description": "Google is rolling out two new Gemini tools on Thursday which could attract users who are thinking about switching their preferred AI chatbot but don't want to \"retrain\" a new AI. Gemini's new \"Import Memory\" and \"Import Chat History\" features help users quickly copy over everything their current AI already knows about them with a couple of pre-written prompts. \nTo use the \"Import Memory\" tool, users copy and paste a suggested prompt from Gemini into their previous AI, then paste the output from ",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
+    "publishedDate": "2026-03-26T21:44:37.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Firefox is adding a switch to turn AI features off",
-    "description": "Unlike many of the companies stuffing AI into their browsers, Mozilla will soon give you a way to turn all of these features off. An update coming on February 24th will add a new \"AI control\" option to Firefox's settings menu, allowing you to disable or enable the browser's individual AI features, including access to a built-in AI chatbot, translations, AI tab group suggestions, and more.\nOver the past year, Firefox joined Microsoft Edge and Google Chrome in doubling down on AI, with the company",
-    "url": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
-    "publishedDate": "2026-02-02T20:02:39.000Z",
+    "title": "Apple will reportedly allow other AI chatbots to plug into Siri",
+    "description": "Siri currently has an integration with OpenAI’s ChatGPT. | Photo: Allison Johnson / The Verge\t\n\nApple's iOS 27 update will allow users to choose the AI chatbot they want to link with Siri. That's according to a report from Bloomberg's Mark Gurman, who says third-party chatbots downloaded from the App Store, like Google's Gemini or Anthropic's Claude, will be able to fetch replies for Siri - similar to how the voice assistant already works with OpenAI's ChatGPT.\nThe new system, reportedly called ",
+    "url": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+    "publishedDate": "2026-03-26T21:31:27.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "OpenClaw: all the news about the trending AI agent",
-    "description": "An open-source AI agent called OpenClaw (formerly known as both Clawdbot and Moltbot) that runs on your own computer and “actually does things” is taking off inside tech circles. Users interact with OpenClaw via messaging apps like WhatsApp, Telegram, Signal, Discord, and iMessage, giving it the keys to operate independently, managing reminders, writing emails, or buying tickets. \nBut once users give it access to their entire computer and accounts, a configuration error or security flaw could be",
-    "url": "https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news",
-    "publishedDate": "2026-02-02T15:47:39.000Z",
+    "title": "Apple’s AI Playlist Playground is bad at music",
+    "description": "Apple Music: \"What do you want to hear?\"\nMe: \"Atmospheric instrumental black metal to write to.\"\nApple Music: \"Here's three metal songs with vocals, a field recording, an ambient electronic track, and a piece of doom jazz.\" \nI am skeptical of AI's ability to serve up the music I want to begin with, but even I was caught slightly off guard by how underwhelming Apple's new Playlist Playground beta is. YouTube Music's AI playlist generator is far from perfect, but when I gave it the same prompt for",
+    "url": "https://www.theverge.com/report/902005/apple-ai-playlist-playground-bad-at-music",
+    "publishedDate": "2026-03-26T20:51:31.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Docusign’s CEO on the dangers of trusting AI to read, and write, your contracts",
-    "description": "Today, I’m talking with Allan Thygesen, who is the CEO of Docusign. You know Docusign; it’s the platform where you sign things online. It turns out 7,000 people work there, which is one of those facts you see flying around sometimes that’s always felt like perfect Decoder bait. What are all those people doing? And what kind of product roadmap does a company like Docusign even need?\nI always assumed I would never find out, because most enterprise software CEOs do not like being on Decoder. That’s",
-    "url": "https://www.theverge.com/podcast/871205/docusign-ceo-allan-thygesen-ai-contracts-e-signature-interview",
-    "publishedDate": "2026-02-02T15:00:00.000Z",
+    "title": "Google’s ‘live’ AI search assistant can handle conversations in dozens more languages",
+    "description": "Google is expanding access to Search Live, a feature that lets you search for information using your voice and camera. The AI search assistant is now available in more than 200 countries and territories, as well as dozens of languages, according to an announcement on Thursday.\nSearch Live rolled out broadly in the US last September, allowing you to point your phone's camera at something and ask about it aloud, such as how to install a shelving unit. The AI assistant will then offer an audio resp",
+    "url": "https://www.theverge.com/tech/901816/google-search-live-ai-assistant-expansion",
+    "publishedDate": "2026-03-26T18:47:51.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Elon Musk’s Grok is still undressing men",
-    "description": "After weeks of flooding the internet with nonconsensual sexual deepfakes, X has finally reined in Elon Musk's rogue chatbot Grok. Musk claims Grok obeys local laws and refuses to produce anything illegal - except it hasn't and it can. My testing shows Grok still readily undresses men and is still churning out intimate images on demand.\nAfter sparking uproar worldwide, X enacted a variety of restrictions to combat the torrent of intimate deepfakes. Evaluating Grok last week suggests little has ch",
-    "url": "https://www.theverge.com/report/872062/grok-still-undressing-men",
-    "publishedDate": "2026-02-02T14:09:47.000Z",
+    "title": "Meta gets ready to launch two new Ray-Ban AI glasses",
+    "description": "Second-generation Ray-Ban Meta glasses. | Photo by Amelia Holowaty Krales / The Verge\t\n\nThis is Lowpass by Janko Roettgers, a newsletter on the ever-evolving intersection of tech and entertainment, syndicated just for The Verge subscribers once a week.\nMeta and its AI glasses hardware partner EssilorLuxottica are getting ready to launch the next generation of their Ray-Ban AI glasses. That's according to a series of FCC filings for two new Meta Ray-Ban models that were published by the agency ea",
+    "url": "https://www.theverge.com/column/901314/meta-new-ray-ban-ai-glasses",
+    "publishedDate": "2026-03-26T16:30:00.000Z",
     "source": "AI | The Verge"
   }
 ]
