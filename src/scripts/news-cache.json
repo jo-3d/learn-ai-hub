@@ -1,37 +1,37 @@
 [
   {
-    "title": "Elon Musk merges SpaceX with xAI (and X)",
-    "description": "Elon Musk is merging two of the companies that he leads, SpaceX and xAI (which also owns X), into one. According to an announcement from Musk:\nSpaceX has acquired xAI to form the most ambitious, vertically-integrated innovation engine on (and off) Earth, with AI, rockets, space-based internet, direct-to-mobile device communications and the world's foremost real-time information and free speech platform. This marks not just the next chapter, but the next book in SpaceX and xAI's mission: scaling ",
-    "url": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
-    "publishedDate": "2026-02-02T21:53:11.000Z",
+    "title": "A new Anthropic model found security problems ‘in every major operating system and web browser’",
+    "description": "Anthropic is debuting a new AI model as part of a cybersecurity partnership with Nvidia, Google, Amazon Web Services, Apple, Microsoft, and other companies. Project Glasswing, as it's called, is billed as a way for large companies, and potentially even the government, to flag vulnerabilities in their systems with virtually no human intervention.\nAnthropic is offering its launch partners access to Claude Mythos Preview, a new general-purpose model that it's not currently planning to publicly rele",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity",
+    "publishedDate": "2026-04-07T18:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Firefox is adding a switch to turn AI features off",
-    "description": "Unlike many of the companies stuffing AI into their browsers, Mozilla will soon give you a way to turn all of these features off. An update coming on February 24th will add a new \"AI control\" option to Firefox's settings menu, allowing you to disable or enable the browser's individual AI features, including access to a built-in AI chatbot, translations, AI tab group suggestions, and more.\nOver the past year, Firefox joined Microsoft Edge and Google Chrome in doubling down on AI, with the company",
-    "url": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
-    "publishedDate": "2026-02-02T20:02:39.000Z",
+    "title": "Suno and major music labels reportedly clash over AI music sharing",
+    "description": "The AI-powered musicmaker Suno is struggling to reach licensing deals with Universal Music Group and Sony Music Entertainment. That's according to a report from the Financial Times, which says both sides can't agree on whether users should be able to share the AI-generated songs they create.\n\"Universal wants AI-generated tracks to stay inside apps such as Suno and not spread freely across the internet. Suno, however, wants users to be able to share and distribute those songs more widely,\" the Fi",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/908119/suno-sony-universal-music-ai-disagreement",
+    "publishedDate": "2026-04-07T16:21:22.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "OpenClaw: all the news about the trending AI agent",
-    "description": "An open-source AI agent called OpenClaw (formerly known as both Clawdbot and Moltbot) that runs on your own computer and “actually does things” is taking off inside tech circles. Users interact with OpenClaw via messaging apps like WhatsApp, Telegram, Signal, Discord, and iMessage, giving it the keys to operate independently, managing reminders, writing emails, or buying tickets. \nBut once users give it access to their entire computer and accounts, a configuration error or security flaw could be",
-    "url": "https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news",
-    "publishedDate": "2026-02-02T15:47:39.000Z",
+    "title": "Intel will help build Elon Musk’s Terafab AI chip factory",
+    "description": "Elon Musk's Terafab AI chip project in Austin, Texas, is gaining a crucial new partner: Intel.\nOn Tuesday, the American chipmaker announced it was signing on to help design and build the sprawling facility, which would supply AI chips to Musk's two companies, SpaceX (newly merged with xAI) and Tesla. Musk needs AI chips to power his plans to build a \"robot army\" that includes self-driving cars and humanoid robots, as well as for the data centers he plans on launching into space. SpaceX plans on ",
+    "url": "https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla",
+    "publishedDate": "2026-04-07T15:43:17.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Docusign’s CEO on the dangers of trusting AI to read, and write, your contracts",
-    "description": "Today, I’m talking with Allan Thygesen, who is the CEO of Docusign. You know Docusign; it’s the platform where you sign things online. It turns out 7,000 people work there, which is one of those facts you see flying around sometimes that’s always felt like perfect Decoder bait. What are all those people doing? And what kind of product roadmap does a company like Docusign even need?\nI always assumed I would never find out, because most enterprise software CEOs do not like being on Decoder. That’s",
-    "url": "https://www.theverge.com/podcast/871205/docusign-ceo-allan-thygesen-ai-contracts-e-signature-interview",
-    "publishedDate": "2026-02-02T15:00:00.000Z",
+    "title": "Gemini is making it faster for distressed users to reach mental health resources ",
+    "description": "Google says it has updated Gemini to better direct users to get mental health resources during moments of crisis. The change comes as the tech giant faces a wrongful death lawsuit alleging its chatbot \"coached\" a man to die by suicide, the latest in a string of lawsuits alleging tangible harm from AI products.\nWhen a conversation indicates a user is in a potential crisis related to suicide or self-harm, Gemini already launches a \"Help is available\" module that directs users to mental health cris",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/907842/google-gemini-mental-health-interface-update",
+    "publishedDate": "2026-04-07T10:09:57.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Elon Musk’s Grok is still undressing men",
-    "description": "After weeks of flooding the internet with nonconsensual sexual deepfakes, X has finally reined in Elon Musk's rogue chatbot Grok. Musk claims Grok obeys local laws and refuses to produce anything illegal - except it hasn't and it can. My testing shows Grok still readily undresses men and is still churning out intimate images on demand.\nAfter sparking uproar worldwide, X enacted a variety of restrictions to combat the torrent of intimate deepfakes. Evaluating Grok last week suggests little has ch",
-    "url": "https://www.theverge.com/report/872062/grok-still-undressing-men",
-    "publishedDate": "2026-02-02T14:09:47.000Z",
+    "title": "Iran threatens OpenAI’s Stargate data center in Abu Dhabi",
+    "description": "An October 2025 image of OpenAI’s UAE Stargate data center under construction. | Image: G42\t\n\nIran's Islamic Revolutionary Guard Corps (IRGC) has published a video threatening OpenAI's planned Abu Dhabi data center if the US follows through on threats to attack the country's power plants, as reported earlier by Tom's Hardware. The video, which was published to an Iranian state-backed news outlet's X account on April 3rd, says the IRGC will carry out the \"complete and utter annihilation\" of US-li",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/907427/iran-openai-stargate-datacenter-uae-abu-dhabi-threat",
+    "publishedDate": "2026-04-06T15:54:19.000Z",
     "source": "AI | The Verge"
   }
 ]
