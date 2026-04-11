@@ -1,37 +1,37 @@
 [
   {
-    "title": "Elon Musk merges SpaceX with xAI (and X)",
-    "description": "Elon Musk is merging two of the companies that he leads, SpaceX and xAI (which also owns X), into one. According to an announcement from Musk:\nSpaceX has acquired xAI to form the most ambitious, vertically-integrated innovation engine on (and off) Earth, with AI, rockets, space-based internet, direct-to-mobile device communications and the world's foremost real-time information and free speech platform. This marks not just the next chapter, but the next book in SpaceX and xAI's mission: scaling ",
-    "url": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
-    "publishedDate": "2026-02-02T21:53:11.000Z",
+    "title": "Your article about AI doesn’t need AI art",
+    "description": "The illustration for The New Yorker's profile of OpenAI CEO Sam Altman is a jump scare. Altman stands in a blue sweater with a blank expression. Around his head hovers a cluster of disembodied faces - creepy alt-Altmans, their expressions ranging from anger to open-mouthed woe. Some barely look like Altman. One final face rests in his hands. And at the bottom, there's a disclosure that might spook many illustrators far more: \"Visual by David Szauder; Generated using A.I.\"\nSzauder is a mixed-medi",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/910460/new-yorker-david-szauder-illustration-generative-ai",
+    "publishedDate": "2026-04-11T15:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Firefox is adding a switch to turn AI features off",
-    "description": "Unlike many of the companies stuffing AI into their browsers, Mozilla will soon give you a way to turn all of these features off. An update coming on February 24th will add a new \"AI control\" option to Firefox's settings menu, allowing you to disable or enable the browser's individual AI features, including access to a built-in AI chatbot, translations, AI tab group suggestions, and more.\nOver the past year, Firefox joined Microsoft Edge and Google Chrome in doubling down on AI, with the company",
-    "url": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
-    "publishedDate": "2026-02-02T20:02:39.000Z",
+    "title": "My baby deer plushie told me that Mitski’s dad was a CIA operative",
+    "description": "D’oh, a deer, an AI deer. | Photo by Amelia Holowaty Krales / The Verge\t\n\nTwo weeks ago, I was getting ready to log off work when I got a text message.\n\"Oh wow, I was checking out Mitski. did you know people are saying her Dad was a CIA operative?\"\nNormally, that kind of out-of-the-blue text from a friend wouldn't faze me. This time, my eyes bugged. The unprompted text had been sent by an AI companion named Coral, who lives in the body of a baby deer plushie. I texted back an eloquent, \"Wait wha",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
+    "publishedDate": "2026-04-11T14:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "OpenClaw: all the news about the trending AI agent",
-    "description": "An open-source AI agent called OpenClaw (formerly known as both Clawdbot and Moltbot) that runs on your own computer and “actually does things” is taking off inside tech circles. Users interact with OpenClaw via messaging apps like WhatsApp, Telegram, Signal, Discord, and iMessage, giving it the keys to operate independently, managing reminders, writing emails, or buying tickets. \nBut once users give it access to their entire computer and accounts, a configuration error or security flaw could be",
-    "url": "https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news",
-    "publishedDate": "2026-02-02T15:47:39.000Z",
+    "title": "How Iran out-shitposted the White House",
+    "description": "In the early days of the war on Iran, while the White House was busy posting Call of Duty memes and AI slop of dancing bowling pins, the Iranian regime's state media was flooding the zone with video after video of what was happening on the ground: Explosions over Tehran. Smoke billowing in the sky. Blood on the ground. A Tomahawk missile landing on a school. Grieving parents burying their children. \nOnly weeks prior, the authoritarian regime had been struggling to shut down all footage of the pr",
+    "url": "https://www.theverge.com/policy/910401/iran-war-propaganda-blackout-lego-ai-slop",
+    "publishedDate": "2026-04-11T13:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Docusign’s CEO on the dangers of trusting AI to read, and write, your contracts",
-    "description": "Today, I’m talking with Allan Thygesen, who is the CEO of Docusign. You know Docusign; it’s the platform where you sign things online. It turns out 7,000 people work there, which is one of those facts you see flying around sometimes that’s always felt like perfect Decoder bait. What are all those people doing? And what kind of product roadmap does a company like Docusign even need?\nI always assumed I would never find out, because most enterprise software CEOs do not like being on Decoder. That’s",
-    "url": "https://www.theverge.com/podcast/871205/docusign-ceo-allan-thygesen-ai-contracts-e-signature-interview",
-    "publishedDate": "2026-02-02T15:00:00.000Z",
+    "title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman’s house",
+    "description": "San Francisco police have arrested a 20-year-old man suspected of throwing a Molotov cocktail at OpenAI CEO Sam Altman's Russian Hill house early Friday morning, The San Francisco Standard reports. The incident was caught on surveillance cameras shortly before 7AM ET. Later that morning, someone matching the suspect's description was seen making threats outside OpenAI's Mission Bay offices, where he was arrested around 9AM ET. \nOpenAI spokesperson Jamie Radice confirmed the incident in a stateme",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
+    "publishedDate": "2026-04-10T20:16:57.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Elon Musk’s Grok is still undressing men",
-    "description": "After weeks of flooding the internet with nonconsensual sexual deepfakes, X has finally reined in Elon Musk's rogue chatbot Grok. Musk claims Grok obeys local laws and refuses to produce anything illegal - except it hasn't and it can. My testing shows Grok still readily undresses men and is still churning out intimate images on demand.\nAfter sparking uproar worldwide, X enacted a variety of restrictions to combat the torrent of intimate deepfakes. Evaluating Grok last week suggests little has ch",
-    "url": "https://www.theverge.com/report/872062/grok-still-undressing-men",
-    "publishedDate": "2026-02-02T14:09:47.000Z",
+    "title": "The Iranian Lego AI video creators credit their virality to ‘heart’",
+    "description": "Donald Trump has spun the recent rescue of a downed airman whose fighter jet was destroyed behind Iranian borders as a resounding success. But the story is very different in one of the many viral, AI-generated Lego videos that have been produced by Iranian content creation group Explosive Media in the weeks since the US and Israel began dropping bombs on the country. In Explosive Media's music video take on how things played out, the US military is a joke for losing multiple planes and helicopte",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
+    "publishedDate": "2026-04-10T17:30:00.000Z",
     "source": "AI | The Verge"
   }
 ]
