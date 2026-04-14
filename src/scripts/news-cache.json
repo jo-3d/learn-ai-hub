@@ -1,37 +1,37 @@
 [
   {
-    "title": "Elon Musk merges SpaceX with xAI (and X)",
-    "description": "Elon Musk is merging two of the companies that he leads, SpaceX and xAI (which also owns X), into one. According to an announcement from Musk:\nSpaceX has acquired xAI to form the most ambitious, vertically-integrated innovation engine on (and off) Earth, with AI, rockets, space-based internet, direct-to-mobile device communications and the world's foremost real-time information and free speech platform. This marks not just the next chapter, but the next book in SpaceX and xAI's mission: scaling ",
-    "url": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
-    "publishedDate": "2026-02-02T21:53:11.000Z",
+    "title": "The attacks on Sam Altman are a warning for the AI world",
+    "description": "Before allegedly throwing a Molotov cocktail at OpenAI CEO Sam Altman's home, the 20-year-old accused attacker wrote about his fear that the AI race would cause humans to go extinct, the San Francisco Chronicle found. Two days later, Altman's home appeared to be targeted a second time, according to The San Francisco Standard. Only a week earlier, an Indianapolis councilman reported 13 shots fired at his door, with a note that read \"No Data Centers,\" after he'd supported a rezoning petition for a",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/911778/ai-violence-sam-altman-home",
+    "publishedDate": "2026-04-14T18:04:42.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Firefox is adding a switch to turn AI features off",
-    "description": "Unlike many of the companies stuffing AI into their browsers, Mozilla will soon give you a way to turn all of these features off. An update coming on February 24th will add a new \"AI control\" option to Firefox's settings menu, allowing you to disable or enable the browser's individual AI features, including access to a built-in AI chatbot, translations, AI tab group suggestions, and more.\nOver the past year, Firefox joined Microsoft Edge and Google Chrome in doubling down on AI, with the company",
-    "url": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
-    "publishedDate": "2026-02-02T20:02:39.000Z",
+    "title": "Chrome now lets you turn AI prompts into repeatable ‘Skills’",
+    "description": "Google is launching a new Chrome workflow feature that allows you to reuse your favorite Gemini commands across multiple webpages. Any AI prompts can now be saved as \"Skills\" in the Chrome desktop browser, letting you instantly run them across any tabs you select.\n\"Until now, repeating an AI task - like asking for ingredient substitutions to make a recipe vegan - meant re-entering the same prompt as you visited different pages,\" Chrome product manager Hafsah Ismail said in the announcement. \"To ",
+    "url": "https://www.theverge.com/tech/911658/google-chrome-gemini-ai-skills-availability-launch",
+    "publishedDate": "2026-04-14T17:00:00.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "OpenClaw: all the news about the trending AI agent",
-    "description": "An open-source AI agent called OpenClaw (formerly known as both Clawdbot and Moltbot) that runs on your own computer and “actually does things” is taking off inside tech circles. Users interact with OpenClaw via messaging apps like WhatsApp, Telegram, Signal, Discord, and iMessage, giving it the keys to operate independently, managing reminders, writing emails, or buying tickets. \nBut once users give it access to their entire computer and accounts, a configuration error or security flaw could be",
-    "url": "https://www.theverge.com/news/872091/openclaw-moltbot-clawdbot-ai-agent-news",
-    "publishedDate": "2026-02-02T15:47:39.000Z",
+    "title": "Has Google’s AI watermarking system been reverse-engineered?",
+    "description": "A software developer claims to have reverse-engineered Google DeepMind's SynthID system, showing how AI watermarks can be stripped from generated images or manually inserted into other works. A claim that, according to Google, isn't true.\nThe developer, going by the username Aloshdenny, has open-sourced their work on GitHub and documented his process, claiming all it required was 200 Gemini-generated images, signal processing, and \"way too much free time.\" A little weed also seemed to help.\n\"No ",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/911579/google-synthid-ai-watermarking-system-reverse-engineered",
+    "publishedDate": "2026-04-14T13:53:53.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Docusign’s CEO on the dangers of trusting AI to read, and write, your contracts",
-    "description": "Today, I’m talking with Allan Thygesen, who is the CEO of Docusign. You know Docusign; it’s the platform where you sign things online. It turns out 7,000 people work there, which is one of those facts you see flying around sometimes that’s always felt like perfect Decoder bait. What are all those people doing? And what kind of product roadmap does a company like Docusign even need?\nI always assumed I would never find out, because most enterprise software CEOs do not like being on Decoder. That’s",
-    "url": "https://www.theverge.com/podcast/871205/docusign-ceo-allan-thygesen-ai-contracts-e-signature-interview",
-    "publishedDate": "2026-02-02T15:00:00.000Z",
+    "title": "Daniel Moreno-Gama is facing federal charges for attacking Sam Altman’s home and OpenAI’s HQ",
+    "description": "Daniel Moreno-Gama is now facing federal charges after allegedly traveling from Texas to California with the intent to kill OpenAI CEO Sam Altman. On April 10th, he was arrested after throwing a Molotov cocktail at OpenAI CEO Sam Altman's home and attempting to break into OpenAI's headquarters. According to prosecutors, at the HQ, \"Moreno-Gama attempted to break the glass doors of the building with a chair and stated that he had come to burn down the location and kill anyone inside.\"\nHis charges",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack",
+    "publishedDate": "2026-04-14T00:02:38.000Z",
     "source": "AI | The Verge"
   },
   {
-    "title": "Elon Musk’s Grok is still undressing men",
-    "description": "After weeks of flooding the internet with nonconsensual sexual deepfakes, X has finally reined in Elon Musk's rogue chatbot Grok. Musk claims Grok obeys local laws and refuses to produce anything illegal - except it hasn't and it can. My testing shows Grok still readily undresses men and is still churning out intimate images on demand.\nAfter sparking uproar worldwide, X enacted a variety of restrictions to combat the torrent of intimate deepfakes. Evaluating Grok last week suggests little has ch",
-    "url": "https://www.theverge.com/report/872062/grok-still-undressing-men",
-    "publishedDate": "2026-02-02T14:09:47.000Z",
+    "title": "AI influencers are ‘everywhere’ at Coachella",
+    "description": "Coachella kicked off on Friday, and as usual, it's the place to be for online influencers looking to show off their memorable experiences at the festival. A quick scroll through my social media feeds has already shown me many uncannily attractive figures in glitzy outfits, posing for perfectly staged photographs with celebrities.\nOnly some of these content creators aren't really there. They don't even exist at all outside of our screens. They're generated using AI tools.\nFaking Coachella attenda",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/911267/ai-influencers-coachella",
+    "publishedDate": "2026-04-13T19:53:46.000Z",
     "source": "AI | The Verge"
   }
 ]
