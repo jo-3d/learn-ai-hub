@@ -1,9 +1,7 @@
 name: Generate AI News Articles
 
 on:
-  schedule:
-    - cron: '0 22 * * *' # Daily at 5 PM ET (10 PM UTC)
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Disabled — manually trigger only if re-enabling
 
 permissions:
   contents: write
